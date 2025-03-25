@@ -6,9 +6,6 @@ import { GifsService } from '../../../gifs/services/gifs.service';
   selector: 'shared-sidebar',
   standalone: false,
   templateUrl: './sidebar.component.html',
-  template: `
-
-  `,
   styleUrl: './sidebar.component.css'
 })
 
@@ -22,7 +19,7 @@ export class SidebarComponent {
 
   }
 
-  selectTag( tag: string ): void {
+  searchTag( tag: string ): void {
 
     this.gifsService.searchTag( tag );
 
